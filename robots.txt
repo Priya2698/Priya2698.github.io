@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: sitemap.xml
+Sitemap: https://priya2698.github.io/sitemap.xml
