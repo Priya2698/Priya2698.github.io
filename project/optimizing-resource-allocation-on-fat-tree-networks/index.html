@@ -711,6 +711,47 @@
 
 
 
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/Priya2698/slurm_changes" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
@@ -720,7 +761,8 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Jobs submitted to clusters or supercomputers vary in resource requirements and execution times. Increasingly, they also vary in other characteristics such as communication and I/O behavior. Most of the current job-schedulers do not consider the communication characteristics of a job which leads to sub-optimal allocations. In this work, we developed a greedy node-allocation algorithm for tree-based network topology. The algorithm uses the information about already running communication-intensive jobs in the cluster. An incoming communication-intensive job is allocated resources on the leaf switches which have maximum free nodes available and minimum communication-intensive jobs already running. More details about the algorithm and the results can be found in our <a href="">paper</a>.</p>
+      <p>Jobs submitted to clusters or supercomputers vary in resource requirements and execution times. Increasingly, they also vary in other characteristics such as communication and I/O behavior. Most of the current job-schedulers do not consider the communication characteristics of a job which leads to sub-optimal allocations. In this work, we developed a [greedy node-allocation algorithm][^1] for tree-based network topology. The algorithm uses the information about already running communication-intensive jobs in the cluster. An incoming communication-intensive job is allocated resources on the leaf switches which have maximum free nodes available and minimum communication-intensive jobs already running. This is done to minimize fragmentation and contention. We implemented our algorithms in SLURM, a widely used resource management systems. We obtained a maximum improvement of 78% in the exceution times over the default SLURM algorithm.</p>
+<p>[^1] This work is a part of the paper <a href="#publication">Communication-aware Job Scheduling using SLURM</a>. Please refer to the paper for additional details.</p>
 
     </div>
 
