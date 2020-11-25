@@ -5,12 +5,29 @@
     <link>https://priya2698.github.io/author/priya-mishra/</link>
       <atom:link href="https://priya2698.github.io/author/priya-mishra/index.xml" rel="self" type="application/rss+xml" />
     <description>Priya Mishra</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://priya2698.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Priya Mishra</title>
       <link>https://priya2698.github.io/author/priya-mishra/</link>
     </image>
+    
+    <item>
+      <title>Communication-aware Job Scheduling using SLURM</title>
+      <link>https://priya2698.github.io/publication/communication-aware-job-scheduling-using-slurm/</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://priya2698.github.io/publication/communication-aware-job-scheduling-using-slurm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimizing Resource Allocation on Fat-Tree Networks</title>
+      <link>https://priya2698.github.io/project/optimizing-resource-allocation-on-fat-tree-networks/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://priya2698.github.io/project/optimizing-resource-allocation-on-fat-tree-networks/</guid>
+      <description>&lt;p&gt;Jobs submitted to clusters or supercomputers vary in resource requirements and execution times. Increasingly, they also vary in other characteristics such as communication and I/O behavior. Most of the current job-schedulers do not consider the communication characteristics of a job which leads to sub-optimal allocations. In this work, we developed a greedy node-allocation algorithm for tree-based network topology. The algorithm uses the information about already running communication-intensive jobs in the cluster. An incoming communication-intensive job is allocated resources on the leaf switches which have maximum free nodes available and minimum communication-intensive jobs already running. More details about the algorithm and the results can be found in our&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
