@@ -34,7 +34,7 @@
   
     
   
-  <meta name="description" content="In this work, we proposed a novel way of optimizing node-allocation based on underlying algorithms of MPI collectives. MPI collectives occur more prominently than point-to-point in production supercomputing applications. We considered three standard communication patterns - recursive doubling, recursive halving with vector doubling and binomial tree algorithms.">
+  <meta name="description" content="Jobs submitted to clusters or supercomputers vary in resource requirements and execution times. Increasingly, they also vary in other characteristics such as communication and I/O behavior. Most of the current job-schedulers do not consider the communication characteristics of a job which leads to sub-optimal allocations.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://priya2698.github.io/project/communication-aware-job-scheduling-using-slurm/">
@@ -279,13 +279,13 @@
   <meta property="og:site_name" content="Priya Mishra">
   <meta property="og:url" content="https://priya2698.github.io/project/communication-aware-job-scheduling-using-slurm/">
   <meta property="og:title" content="Communication-aware Job Scheduling using SLURM | Priya Mishra">
-  <meta property="og:description" content="In this work, we proposed a novel way of optimizing node-allocation based on underlying algorithms of MPI collectives. MPI collectives occur more prominently than point-to-point in production supercomputing applications. We considered three standard communication patterns - recursive doubling, recursive halving with vector doubling and binomial tree algorithms."><meta property="og:image" content="https://priya2698.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="Jobs submitted to clusters or supercomputers vary in resource requirements and execution times. Increasingly, they also vary in other characteristics such as communication and I/O behavior. Most of the current job-schedulers do not consider the communication characteristics of a job which leads to sub-optimal allocations."><meta property="og:image" content="https://priya2698.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://priya2698.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-01-01T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2019-05-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-01-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2019-05-01T00:00:00&#43;00:00">
   
 
   
@@ -311,8 +311,8 @@
   },
   "headline": "Communication-aware Job Scheduling using SLURM",
   
-  "datePublished": "2020-01-01T00:00:00Z",
-  "dateModified": "2020-01-01T00:00:00Z",
+  "datePublished": "2019-05-01T00:00:00Z",
+  "dateModified": "2019-05-01T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -327,7 +327,7 @@
       "url": "https://priya2698.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "In this work, we proposed a novel way of optimizing node-allocation based on underlying algorithms of MPI collectives. MPI collectives occur more prominently than point-to-point in production supercomputing applications. We considered three standard communication patterns - recursive doubling, recursive halving with vector doubling and binomial tree algorithms."
+  "description": "Jobs submitted to clusters or supercomputers vary in resource requirements and execution times. Increasingly, they also vary in other characteristics such as communication and I/O behavior. Most of the current job-schedulers do not consider the communication characteristics of a job which leads to sub-optimal allocations."
 }
 </script>
 
@@ -708,7 +708,7 @@
     
       
     
-    Jan 1, 2020
+    May 1, 2019
   </span>
   
 
@@ -791,16 +791,10 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>In this work, we proposed a novel way of optimizing node-allocation based on underlying algorithms of MPI collectives. MPI collectives occur more prominently than point-to-point in production supercomputing applications. We considered three standard communication patterns - recursive doubling, recursive halving with vector doubling and binomial tree algorithms. These occur in most MPI collectives.
-We implemented two new node-allocation algorithms, balanced and adaptive<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. The balanced algorithm aims at allocating nodes in powers of two on the leaf switches, assuming that the communication pattern is governed by one of the popular parallel algorithms, such as recursive doubling or binomial. Unbalanced allocations have more inter-switch communication. We also propose an adaptive algorithm, that selects the best-the one with the lower communication cost-between balanced and <a href="https://priya2698.github.io/project/optimizing-resource-allocation-on-fat-tree-networks/" target="_blank" rel="noopener">greedy</a> algorithm. These algorithms were implemented using SLURM. The two algorithms reduce execution time by 12% and wait times by 53% on average as compared to the default SLURM algorithm.</p>
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p>This work is a part of the paper <a href="https://priya2698.github.io/publication/communication-aware-job-scheduling-using-slurm/" target="_blank" rel="noopener">Communication-aware Job Scheduling using SLURM</a>. Please refer to the paper for additional details. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
+      <p>Jobs submitted to clusters or supercomputers vary in resource requirements and execution times. Increasingly, they also vary in other characteristics such as communication and I/O behavior. Most of the current job-schedulers do not consider the communication characteristics of a job which leads to sub-optimal allocations.</p>
+<p>We implemented three new node-allocation algorithms, greedy, balanced and adaptive[^1]. We proposed a novel way of optimizing node-allocation based on underlying algorithms of MPI collectives.</p>
+<p>The balanced algorithm aims at allocating nodes in powers of two on These algorithms were implemented using SLURM. The two algorithms reduce execution time by 12% and wait times by 53% on average as compared to the default SLURM algorithm.</p>
+<p>Additional details can be found in the paper: <a href="https://priya2698.github.io/publication/communication-aware-job-scheduling-using-slurm/" target="_blank" rel="noopener">Communication-aware Job Scheduling using SLURM</a></p>
 
     </div>
 

@@ -23,35 +23,12 @@
     <item>
       <title>Communication-aware Job Scheduling using SLURM</title>
       <link>https://priya2698.github.io/project/communication-aware-job-scheduling-using-slurm/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://priya2698.github.io/project/communication-aware-job-scheduling-using-slurm/</guid>
-      <description>&lt;p&gt;In this work, we proposed a novel way of optimizing node-allocation based on underlying algorithms of MPI collectives. MPI collectives occur more prominently than point-to-point in production supercomputing applications. We considered three standard communication patterns - recursive doubling, recursive halving with vector doubling and binomial tree algorithms. These occur in most MPI collectives.
-We implemented two new node-allocation algorithms, balanced and adaptive&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. The balanced algorithm aims at allocating nodes in powers of two on the leaf switches, assuming that the communication pattern is governed by one of the popular parallel algorithms, such as recursive doubling or binomial. Unbalanced allocations have more inter-switch communication. We also propose an adaptive algorithm, that selects the best-the one with the lower communication cost-between balanced and &lt;a href=&#34;https://priya2698.github.io/project/optimizing-resource-allocation-on-fat-tree-networks/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;greedy&lt;/a&gt; algorithm. These algorithms were implemented using SLURM. The two algorithms reduce execution time by 12% and wait times by 53% on average as compared to the default SLURM algorithm.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;This work is a part of the paper &lt;a href=&#34;https://priya2698.github.io/publication/communication-aware-job-scheduling-using-slurm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Communication-aware Job Scheduling using SLURM&lt;/a&gt;. Please refer to the paper for additional details. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Optimizing Resource Allocation on Fat-Tree Networks</title>
-      <link>https://priya2698.github.io/project/optimizing-resource-allocation-on-fat-tree-networks/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://priya2698.github.io/project/optimizing-resource-allocation-on-fat-tree-networks/</guid>
-      <description>&lt;p&gt;Jobs submitted to clusters or supercomputers vary in resource requirements and execution times. Increasingly, they also vary in other characteristics such as communication and I/O behavior. Most of the current job-schedulers do not consider the communication characteristics of a job which leads to sub-optimal allocations. In this work, we developed a greedy node-allocation algorithm&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for tree-based network topology that aims at improving the performance of communication-intensive jobs by allocating resources on the least contended switches. The algorithm uses the information about already running communication-intensive jobs in the cluster. An incoming communication-intensive job is allocated resources on the leaf switches which have maximum free nodes available and minimum communication-intensive jobs already running. This is done to minimize fragmentation and contention. We implemented our algorithm in SLURM, a widely used resource management systems. We obtained a maximum improvement of 78% in the execution times over the default SLURM algorithm.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;This work is a part of the paper &lt;a href=&#34;https://priya2698.github.io/publication/communication-aware-job-scheduling-using-slurm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Communication-aware Job Scheduling using SLURM&lt;/a&gt;. Please refer to the paper for additional details. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
+      <guid>https://priya2698.github.io/project/communication-aware-job-scheduling-using-slurm/</guid>
+      <description>&lt;p&gt;Jobs submitted to clusters or supercomputers vary in resource requirements and execution times. Increasingly, they also vary in other characteristics such as communication and I/O behavior. Most of the current job-schedulers do not consider the communication characteristics of a job which leads to sub-optimal allocations.&lt;/p&gt;
+&lt;p&gt;We implemented three new node-allocation algorithms, greedy, balanced and adaptive[^1]. We proposed a novel way of optimizing node-allocation based on underlying algorithms of MPI collectives.&lt;/p&gt;
+&lt;p&gt;The balanced algorithm aims at allocating nodes in powers of two on These algorithms were implemented using SLURM. The two algorithms reduce execution time by 12% and wait times by 53% on average as compared to the default SLURM algorithm.&lt;/p&gt;
+&lt;p&gt;Additional details can be found in the paper: &lt;a href=&#34;https://priya2698.github.io/publication/communication-aware-job-scheduling-using-slurm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Communication-aware Job Scheduling using SLURM&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
